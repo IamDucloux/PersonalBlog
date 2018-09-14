@@ -1,12 +1,11 @@
 
-
-    font-family: 'Anton', sans-serif;
+    /*font-family: 'Anton', sans-serif;
 
     font-family: 'Bangers', cursive;
 
     font-family: 'Audiowide', cursive;
 
-    font-family: 'Julius Sans One', sans-serif;
+    font-family: 'Julius Sans One', sans-serif;*/
 
 html
 {
@@ -17,23 +16,34 @@ html
 }
 header{
     font-family: 'Audiowide', cursive;
-    font-size: 2.7rem;
+    font-size: 7vw;
     text-align: center;
 
+}
+
+header h1
+{
+    margin-bottom: 0;
+    top: 0;
+    position: absolute;
 }
 
 .about
 {
     display: grid;
     align-items: center;
+    top: 180px;
+    position: absolute;
+    left: 0;
 }
 
 .about img
 {
     width: 100%;
     height: auto;
-    display: flex;
+    display: block;
 }
+
 
 .description h2
 {
@@ -56,6 +66,32 @@ header{
     border-right: 5px solid purple;
     border-left: 5px solid purple;
     margin-top: 0;
-    background-color: floralwhite;
-    padding: 0 2px 0 2px;
+    background-color: lightcyan;
+    padding: 0 4px 0 4px;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 2.6vw;
+}
+
+.galery
+{
+    display: grid;
+    top: 430px;
+
+}
+
+.galery h3
+{
+    text-align: center;
+    font-size: 6vw;
+    position: relative;
+    top: 410px;
+    margin-top: 0;
+}
+
+.contact
+{
+    display: flex;
+    position: absolute;
+    top: 800px;
+
 }
