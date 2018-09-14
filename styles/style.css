@@ -10,10 +10,43 @@
 
 html
 {
-    background-color: aqua;
+    background-color: aquamarine;
+    padding: 0;
+    margin: 0;
+
 }
 header{
-  text-align: center;
-  font-family: 'Anton', sans-serif;
+    font-family: 'Audiowide', cursive;
+    font-size: 2.7rem;
+    align-items: center;
 
+}
+
+.banner img
+{
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    align-items: center;
+    height: auto;
+
+}
+
+.banner h1
+{
+    display: block;
+    color: lightblue;
+    position: absolute;
+    top: 0;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    border: 0;
+    border-style: none;
+}
+
+.banner
+{
+    display: grid;
 }
