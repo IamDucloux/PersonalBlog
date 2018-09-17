@@ -12,19 +12,19 @@ html
     background-color: aquamarine;
     padding: 0;
     margin: 0;
-
-}
-
-.container
-{
     display: flex;
     flex-direction: column;
     justify-content: center;
 
 }
 
+body
+{
+    margin: 0;
+}
+
+
 header{
-    display: flex;
     font-family: 'Audiowide', cursive;
     font-size: 7vw;
     text-align: center;
@@ -32,9 +32,21 @@ header{
 
 }
 
-header h1
+.banner
+{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background-image: url(/images/gem-lauris-rk-384958-unsplash.jpg);
+    background-size: cover;
+}
+
+
+.banner h1
 {
     order: 1;
+    position: relative;
+    color: darkgoldenrod;
 }
 
 .about
@@ -43,12 +55,12 @@ header h1
     flex-direction: column;
     justify-content: center;
     order: 2;
+    margin: 0 8px;
 }
 
-.about img
+.perfil_img
 {
-    width: 100%;
-    height: auto;
+    align-self: center;
 }
 
 
@@ -81,8 +93,11 @@ header h1
 
 .galery
 {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     order: 3;
+    margin: 0 8px;
 
 }
 
@@ -90,13 +105,14 @@ header h1
 {
     text-align: center;
     font-size: 6vw;
-    position: relative;
     margin-top: 0;
 }
 
 .contact
 {
-    display: flex;
     order: 4;
+    align-self: flex-end;
+    display: flex;
     justify-content: center;
+
 }
