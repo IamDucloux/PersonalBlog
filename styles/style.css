@@ -20,7 +20,7 @@
 
 html
 {
-    background-color: var(--main-bg-color);
+    background-color:lightgray;
     padding: 0;
     margin: 0;
     display: flex;
