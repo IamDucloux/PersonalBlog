@@ -37,7 +37,7 @@ header{
     display: flex;
     justify-content: center;
     overflow: hidden;
-    background-image: url(/images/gem-lauris-rk-384958-unsplash.jpg);
+    background-image: url(PersonalBlog\images\gem-lauris-rk-384958-unsplash.jpg);
     background-size: cover;
 }
 
