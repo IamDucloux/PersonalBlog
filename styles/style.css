@@ -1,15 +1,26 @@
 
-    /*font-family: 'Anton', sans-serif;
+/*
+    font-family: 'Anton', sans-serif;
 
     font-family: 'Bangers', cursive;
 
     font-family: 'Audiowide', cursive;
 
-    font-family: 'Julius Sans One', sans-serif;*/
+    font-family: 'Julius Sans One', sans-serif;
+*/
+:root
+{
+    --main-bg-color: lightgray;
+    --secundary: darkgray;
+    --terciary: darkgoldenrod;
+    --enphasis: darkblue;
+}
+
+
 
 html
 {
-    background-color: aquamarine;
+    background-color: var(--main-bg-color);
     padding: 0;
     margin: 0;
     display: flex;
@@ -67,28 +78,29 @@ header{
 .description h2
 {
     text-align: center;
-    font-size: 10vw;
+    font-size: 8vw;
     font-family: monospace;
-    background-color: lightpink;
+    background-color: var(--secundary);
     margin-bottom: 0;
     margin-top: 0;
-    border-left: 5px solid purple;
-    border-right: 5px solid purple;
-    border-top: 5px solid purple;
-    color: purple;
+    border-left: 5px solid var(--terciary);
+    border-right: 5px solid var(--terciary);
+    border-top: 5px solid var(--terciary);
+    color: var(--terciary);
 }
 
 .description p
 {
     text-align: justify;
-    border-bottom: 5px solid purple;
-    border-right: 5px solid purple;
-    border-left: 5px solid purple;
+    border-bottom: 5px solid var(--terciary);
+    border-right: 5px solid var(--terciary);
+    border-left: 5px solid var(--terciary);
     margin-top: 0;
-    background-color: lightcyan;
+    background-color: white;
     padding: 0 4px 0 4px;
     font-family: 'Julius Sans One', sans-serif;
-    font-size: 2.6vw;
+    font-size: 2.3vw;
+    color: darkblue
 }
 
 .galery
@@ -98,6 +110,7 @@ header{
     justify-content: center;
     order: 3;
     margin: 0 8px;
+    flex-grow: 2;
 
 }
 
@@ -106,13 +119,20 @@ header{
     text-align: center;
     font-size: 6vw;
     margin-top: 0;
+    color: var(--enphasis);
+
 }
 
 .contact
 {
     order: 4;
-    align-self: flex-end;
     display: flex;
-    justify-content: center;
-
+    flex-direction: row;
+    justify-content: space-around;
+    flex-grow: 1;
+    align-items: stretch;
+    flex-basis: auto;
+    align-self: flex-end;
+    background-color: var(--secundary);
+    bottom: 0;
 }
