@@ -66,12 +66,22 @@ header{
     flex-direction: column;
     justify-content: center;
     order: 2;
-    margin: 0 8px;
+    margin: 15px 8px;
+    margin-bottom: 0;
+    background-color: var(--terciary);
 }
 
 .perfil_img
 {
     align-self: center;
+    background-color: var(--terciary);
+}
+
+.perfil_img img
+{
+    border-radius: 20%;
+    width: 100%;
+    height: auto;
 }
 
 
@@ -83,24 +93,25 @@ header{
     background-color: var(--secundary);
     margin-bottom: 0;
     margin-top: 0;
-    border-left: 5px solid var(--terciary);
-    border-right: 5px solid var(--terciary);
-    border-top: 5px solid var(--terciary);
+    border-left: 5px solid var(--secundary);
+    border-right: 5px solid var(--secundary);
+    border-top: 5px solid var(--secundary);
     color: var(--terciary);
 }
 
 .description p
 {
     text-align: justify;
-    border-bottom: 5px solid var(--terciary);
-    border-right: 5px solid var(--terciary);
-    border-left: 5px solid var(--terciary);
+    border-bottom: 5px solid var(--secundary);
+    border-right: 5px solid var(--secundary);
+    border-left: 5px solid var(--secundary);
     margin-top: 0;
     background-color: white;
     padding: 0 4px 0 4px;
     font-family: 'Julius Sans One', sans-serif;
     font-size: 2.3vw;
-    color: darkblue
+    color: darkblue;
+    margin-bottom: 0;
 }
 
 .galery
@@ -116,17 +127,17 @@ header{
 
 .galery a
 {
-    width: 100;
-    height: auto;
+    width: 100%;
+    max-height: 200px;
     overflow: hidden;
-    height: 50%;
+    margin-top: 8px;
 }
 
 .galery h3
 {
     text-align: center;
     font-size: 6vw;
-    margin-top: 0;
+    margin-top: 8px;
     color: var(--enphasis);
     background-color: var(--secundary);
     margin-bottom: 0;
@@ -146,4 +157,5 @@ header{
     align-self: flex-end;
     background-color: var(--secundary);
     bottom: 0;
+    margin-top: 8px;
 }
