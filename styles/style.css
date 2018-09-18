@@ -48,7 +48,7 @@ header{
     display: flex;
     justify-content: center;
     overflow: hidden;
-    background-image: url(/images/tanialee-gonzalez-698417-unsplash.jpg);
+    background-image: url(/images/gem-lauris-rk-384958-unsplash.jpg);
     background-size: cover;
 }
 
@@ -131,6 +131,8 @@ header{
     max-height: 200px;
     overflow: hidden;
     margin-top: 8px;
+    border-top: 4px solid var(--secundary);
+    border-bottom: 6px solid var(--secundary);
 }
 
 .galery h3
