@@ -82,9 +82,12 @@ header{
 
 .perfil_img img
 {
+    display: block;
+    margin: auto;
     border-radius: 20%;
-    width: 100%;
+    width: 60%;
     height: auto;
+
 }
 
 
