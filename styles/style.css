@@ -10,17 +10,18 @@
 */
 :root
 {
-    --main-bg-color: lightgray;
-    --secundary: darkgray;
-    --terciary: darkgoldenrod;
-    --enphasis: darkblue;
+    --main-bg-color: #FEB2B4;
+    --secundary: #FFD1D1;
+    --terciary: #FD9092;
+    --enphasis: #C13DFF;
+
 }
 
 
 
 html
 {
-    background-color:lightgray;
+    background-color:var(--main-bg-color);
     padding: 0;
     margin: 0;
     display: flex;
@@ -45,10 +46,9 @@ header{
 
 .banner
 {
-    display: flex;
+    display: block;
     justify-content: center;
     overflow: hidden;
-    background-image: url(/images/gem-lauris-rk-384958-unsplash.jpg);
     background-size: cover;
 }
 
@@ -57,7 +57,10 @@ header{
 {
     order: 1;
     position: relative;
-    color: darkgoldenrod;
+    color: var(--terciary);
+    margin-top: 0;
+    background-color: var(--secundary);
+    margin-bottom: 20px;
 }
 
 .about
@@ -102,15 +105,15 @@ header{
 .description p
 {
     text-align: justify;
-    border-bottom: 5px solid var(--secundary);
-    border-right: 5px solid var(--secundary);
-    border-left: 5px solid var(--secundary);
+    border-bottom: 5px solid var(--terciary);
+    border-right: 5px solid var(--terciary);
+    border-left: 5px solid var(--terciary);
     margin-top: 0;
-    background-color: white;
+    background-color: var(--secundary);
     padding: 0 4px 0 4px;
     font-family: 'Julius Sans One', sans-serif;
     font-size: 2.3vw;
-    color: darkblue;
+    color: var(--enphasis);
     margin-bottom: 0;
 }
 
